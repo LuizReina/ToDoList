@@ -7,18 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>Minha Lista de Tarefas</header>
+    <div class="container">
+        <header>
+            <h1>Minha Lista de Tarefas</h1>
+        </header>
 
-    <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
-    <input id="texto-tarefa">
-    <ol id="lista-tarefas"></ol>
-    <button id="criar-tarefa">Adicionar Tarefa</button>
-    <button id="salvar-tarefas">Salvar Tarefas</button>
-    <button id="apaga-tudo">Apagar Tudo</button>
-    <button id="remover-finalizados">Remover Finalizados</button>
-    <button id="remover-selecionado">Remover Selecionado</button>
-    <button id="mover-cima">Mover para Cima</button>
-    <button id="mover-baixo">Mover para Baixo</button>
+        <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
+
+        <section>
+            <input id="texto-tarefa">
+            <button class="new" id="criar-tarefa">✓</button>
+        </section>
+
+        <section class="tasks">
+            <ol class="list" id="lista-tarefas"></ol>
+            <button class="move" id="mover-cima">↑</button>
+            <button class="move" id="mover-baixo">↓</button>
+        </section>
+
+        <section class="botoes">
+            <button id="salvar-tarefas">Salvar Tarefas</button>
+            <button id="apaga-tudo">Apagar Tudo</button>
+            <button id="remover-finalizados">Remover Finalizados</button>
+            <button id="remover-selecionado">Remover Selecionado</button>
+        </section>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
